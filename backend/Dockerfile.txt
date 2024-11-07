@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+# Dockerfile for frontend
+=======
+# Dockerfile for backend
+>>>>>>> acffc2b (backend files-added)
+FROM node:14
+WORKDIR /app
+COPY package.json ./
+RUN npm install
+COPY . .
+<<<<<<< HEAD
+EXPOSE 3000
+CMD ["npm", "start"]
+=======
+EXPOSE 5000
+CMD ["node", "app.js"]
+>>>>>>> acffc2b (backend files-added)
